@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Generate Gradient Background</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="https://aomine1745.github.io/ico/aomine.ico">
+</head>
+<body>
+	<div class="container">
+		<div class="box"><img src="https://aomine1745.github.io/Img/bg2.jpg" alt="img"></div>
+		<div class="box"><img src="https://aomine1745.github.io/Img/bg3.jpg" alt="img"></div>
+		<div class="box"><img src="https://aomine1745.github.io/Img/bg4.jpg" alt="img"></div>
+		<div class="box"><img src="https://aomine1745.github.io/Img/bg7.jpg" alt="img"></div>
+	</div>
+
+	<script src="https://unpkg.com/grade-js/docs/dist/grade.js"></script>
+	<script type="text/javascript">
+		window.addEventListener('load', function(){
+        /*
+            A NodeList of all your image containers (Or a single Node).
+            The library will locate an <img /> within each
+            container to create the gradient from.
+            */
+            Grade(document.querySelectorAll('.box'))
+        })
+    </script>
+</body>
+</html>
